@@ -26,8 +26,4 @@
         android:layout_height="@dimen/com_facebook_picker_divider_width"
         android:background="@drawable/com_facebook_picker_default_separator_color" />
 </LinearLayout>
-<<<<<<< HEAD
 <!-- From: file:/home/rajendra/Androidproject/Intellimeet/ARSampleApp/FacebookSDK/res/layout/com_facebook_picker_search_box.xml -->
-=======
-<!-- From: file:/home/intelligrape/AndroidStudioProjects/ARSampleApp/FacebookSDK/res/layout/com_facebook_picker_search_box.xml -->
->>>>>>> 3c7587ff1895260a0691dd60eb98d082b926f6ea

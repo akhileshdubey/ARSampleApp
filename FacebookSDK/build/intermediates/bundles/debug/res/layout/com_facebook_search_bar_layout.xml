@@ -26,8 +26,4 @@
         android:textColor="@android:color/black"
         android:textColorHint="@color/com_facebook_picker_search_bar_text"
         android:textSize="16sp" />
-<<<<<<< HEAD
 </LinearLayout><!-- From: file:/home/rajendra/Androidproject/Intellimeet/ARSampleApp/FacebookSDK/res/layout/com_facebook_search_bar_layout.xml -->
-=======
-</LinearLayout><!-- From: file:/home/intelligrape/AndroidStudioProjects/ARSampleApp/FacebookSDK/res/layout/com_facebook_search_bar_layout.xml -->
->>>>>>> 3c7587ff1895260a0691dd60eb98d082b926f6ea

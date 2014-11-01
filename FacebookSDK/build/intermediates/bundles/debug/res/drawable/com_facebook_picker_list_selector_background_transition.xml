@@ -17,8 +17,4 @@
     <item android:drawable="@drawable/com_facebook_picker_list_pressed" />
     <item android:drawable="@drawable/com_facebook_picker_list_longpressed" />
 </transition>
-<<<<<<< HEAD
 <!-- From: file:/home/rajendra/Androidproject/Intellimeet/ARSampleApp/FacebookSDK/res/drawable/com_facebook_picker_list_selector_background_transition.xml -->
-=======
-<!-- From: file:/home/intelligrape/AndroidStudioProjects/ARSampleApp/FacebookSDK/res/drawable/com_facebook_picker_list_selector_background_transition.xml -->
->>>>>>> 3c7587ff1895260a0691dd60eb98d082b926f6ea

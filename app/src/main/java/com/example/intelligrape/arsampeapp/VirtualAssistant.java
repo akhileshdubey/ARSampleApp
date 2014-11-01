@@ -140,6 +140,21 @@ public class VirtualAssistant extends Activity implements View.OnTouchListener {
 
             }
         });
+
+
+        ((Button) mToolBox.findViewById(R.id.bt_capture_screen)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+
+
+            }
+        });
+
+
+
+
 //        ((Button)mToolBox.findViewById(R.id.rLeft)).setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {

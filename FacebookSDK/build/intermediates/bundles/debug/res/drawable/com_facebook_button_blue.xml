@@ -7,8 +7,4 @@
     <item android:drawable="@drawable/com_facebook_button_blue_normal" android:state_focused="false" android:state_pressed="false" />
 
 </selector>
-<<<<<<< HEAD
 <!-- From: file:/home/rajendra/Androidproject/Intellimeet/ARSampleApp/FacebookSDK/res/drawable/com_facebook_button_blue.xml -->
-=======
-<!-- From: file:/home/intelligrape/AndroidStudioProjects/ARSampleApp/FacebookSDK/res/drawable/com_facebook_button_blue.xml -->
->>>>>>> 3c7587ff1895260a0691dd60eb98d082b926f6ea

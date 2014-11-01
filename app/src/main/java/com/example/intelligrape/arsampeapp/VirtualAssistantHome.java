@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -66,7 +68,6 @@ public class VirtualAssistantHome extends ListActivity {
 
         Intent demoIntent = new Intent(VirtualAssistantHome.this, VirtualAssistant.class);
 
-
         demoIntent.putExtra("resource_id", brandsLogo[position]);
         demoIntent.putExtra("demo_id", 1);
         startActivity(demoIntent);
@@ -103,6 +104,8 @@ public class VirtualAssistantHome extends ListActivity {
             // Change the icon for Windows and iPhone
             imageView.setImageResource(brandsLogo[position]);
 
+            Animation animation1 = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.splash_animation);
+            imageView.startAnimation(animation1);
 
             return rowView;
         }

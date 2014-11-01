@@ -10,18 +10,30 @@
         android:id="@+id/visitUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/relativeLayout3"
-        android:layout_toStartOf="@+id/relativeLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/share"
         android:background="@drawable/bg"
-        android:text="Visit Us" />
+        android:text="Visit Us"
+        android:textSize="@dimen/text_size"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_alignRight="@+id/share"
+        android:layout_alignEnd="@+id/share" />
 
     <Button
         android:id="@+id/share"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/toggle"
+        android:layout_alignRight="@+id/toggle"
+        android:layout_margin="@dimen/margin"
+        android:layout_toEndOf="@+id/relativeLayout4"
+        android:layout_toRightOf="@+id/relativeLayout4"
         android:background="@drawable/bg"
-        android:text="Share" />
+        android:text="Share"
+        android:textSize="@dimen/text_size" />
 
 
     <RelativeLayout
@@ -45,10 +57,13 @@
             android:id="@+id/left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/margin"
             android:background="@drawable/bg"
             android:text="Left"
 
-            />
+            android:textSize="@dimen/text_size" />
 
         <Button
 
@@ -56,10 +71,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/left"
+            android:layout_margin="@dimen/margin"
             android:background="@drawable/bg"
-            android:text="Right"
 
-            />
+            android:text="Right"
+            android:textSize="@dimen/text_size" />
 
 
         <Button
@@ -67,35 +83,45 @@
             android:id="@+id/up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
             android:layout_toRightOf="@id/left"
             android:background="@drawable/bg"
             android:text="UP"
 
+            android:textSize="@dimen/text_size"
+
             />
 
         <Button
-
             android:id="@+id/down"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/up"
+            android:layout_margin="@dimen/margin"
             android:layout_toRightOf="@id/left"
             android:background="@drawable/bg"
             android:text="Down"
+            android:textSize="@dimen/text_size"
 
             />
 
         <Button
-
             android:id="@+id/zoomIn"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/up"
             android:background="@drawable/bg"
             android:text="ZoomIn"
+            android:textSize="@dimen/text_size"
 
 
-            />
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_alignRight="@+id/zoomOut"
+            android:layout_alignEnd="@+id/zoomOut" />
 
         <Button
 
@@ -103,11 +129,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/zoomIn"
+            android:layout_margin="@dimen/margin"
             android:layout_toRightOf="@id/up"
             android:background="@drawable/bg"
             android:text="ZoomOut"
-
-            />
+            android:textSize="@dimen/text_size" />
 
     </RelativeLayout>
 
@@ -120,29 +146,49 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:background="@drawable/bg"
-        android:text="Rotate Right" />
+        android:text="Rotate Right"
+        android:textSize="@dimen/text_size"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_alignRight="@+id/rLeft"
+        android:layout_alignEnd="@+id/rLeft" />
 
     <Button
-
         android:id="@+id/rLeft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/rRight"
-        android:layout_alignEnd="@+id/rRight"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/rRight"
+
         android:background="@drawable/bg"
-        android:text="Rotate Left" />
+        android:text="Rotate Left"
+        android:textSize="@dimen/text_size"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_alignRight="@+id/toggle"
+        android:layout_alignEnd="@+id/toggle" />
 
     <Button
-
         android:id="@+id/toggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/rLeft"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/margin"
         android:background="@drawable/bg"
-        android:text="Toggle Camera" />
+        android:text="Toggle Camera"
+        android:textSize="@dimen/text_size" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture Screen"
+        android:id="@+id/bt_capture_screen"
+        android:background="@drawable/bg"
+        android:layout_alignBottom="@+id/rRight"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
