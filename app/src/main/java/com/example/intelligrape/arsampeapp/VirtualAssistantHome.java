@@ -42,10 +42,7 @@ public class VirtualAssistantHome extends ListActivity {
         setListAdapter(adapter);
 
 
-
-
     }
-
 
 
     @Override
@@ -72,6 +69,7 @@ public class VirtualAssistantHome extends ListActivity {
         private final Context context;
         private final String[] values;
         private final int[] logos;
+
         public MySimpleArrayAdapter(Context context, String[] values, int[] logos) {
             super(context, R.layout.row_layout, values);
             this.context = context;

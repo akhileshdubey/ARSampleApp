@@ -40,7 +40,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true">
 
-    <Button
+        <Button
 
             android:id="@+id/left"
             android:layout_width="wrap_content"
