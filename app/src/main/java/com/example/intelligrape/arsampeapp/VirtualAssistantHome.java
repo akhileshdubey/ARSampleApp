@@ -14,24 +14,31 @@ import android.widget.TextView;
 
 public class VirtualAssistantHome extends ListActivity {
 
-    int[] brandsLogo = new int[]{R.drawable.black_glass_256,
-            R.drawable.white_glass_256,
-            R.drawable.sun_killer_green_256      ,
-            R.drawable.sun_killer_yellow_256,
-            R.drawable.sun_killer_orange_512,
+    int[] brandsLogo = new int[]{
             R.drawable.sun_killer_512,
+            R.drawable.sun_killer_black_256,
+            R.drawable.sun_killer_black_512,
+            R.drawable.sun_killer_blue_256,
+            R.drawable.sun_killer_blue_512,
+            R.drawable.sun_killer_orange_256,
             R.drawable.sun_killer_orange_512
     };
-    String[] values = new String[]{"black_glass_256", "white_glass_256",
-            "sun_killer_green_256", "sun_killer_yellow_256", "sun_killer_orange_512",
-            "sun_killer_512", "sun_killer_orange_512"
+    String[] values = new String[]{
+            "sun_killer_512",
+            "sun_killer_black_256",
+            "sun_killer_black_512",
+            "sun_killer_blue_256",
+            "sun_killer_blue_512",
+            "sun_killer_orange_256",
+            "sun_killer_orange_512"
     };
-    int[] brandsLogoRaw = new int[]{R.raw.black_glass_256,
-            R.raw.white_glass_256,
-            R.raw.sun_killer_green_256      ,
-            R.raw.sun_killer_yellow_256,
-            R.raw.sun_killer_orange_512,
+    int[] brandsLogoRaw = new int[]{
             R.raw.sun_killer_512,
+            R.raw.sun_killer_black_256,
+            R.raw.sun_killer_black_512,
+            R.raw.sun_killer_blue_256,
+            R.raw.sun_killer_blue_512,
+            R.raw.sun_killer_orange_256,
             R.raw.sun_killer_orange_512
     };
 
