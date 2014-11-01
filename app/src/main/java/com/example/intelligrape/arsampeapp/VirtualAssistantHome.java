@@ -16,11 +16,6 @@ public class VirtualAssistantHome extends ListActivity {
 
     int[] brandsLogo = new int[]{
             R.drawable.sun_killer_512,
-            R.drawable.sun_killer_black_256,
-            R.drawable.sun_killer_black_512,
-            R.drawable.sun_killer_blue_256,
-            R.drawable.sun_killer_blue_512,
-            R.drawable.sun_killer_orange_256,
             R.drawable.sun_killer_orange_512
     };
     String[] values = new String[]{
@@ -34,11 +29,6 @@ public class VirtualAssistantHome extends ListActivity {
     };
     int[] brandsLogoRaw = new int[]{
             R.raw.sun_killer_512,
-            R.raw.sun_killer_black_256,
-            R.raw.sun_killer_black_512,
-            R.raw.sun_killer_blue_256,
-            R.raw.sun_killer_blue_512,
-            R.raw.sun_killer_orange_256,
             R.raw.sun_killer_orange_512
     };
 
