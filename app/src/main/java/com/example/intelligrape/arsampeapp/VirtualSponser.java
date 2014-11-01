@@ -23,13 +23,11 @@ public class VirtualSponser extends Activity {
     Integer[] imageIDs = {
             R.drawable.icon,
             R.drawable.mutan_mini,
-
     };
     //    public static boolean invertPosition = false;
 //    public static boolean isScreenshot = false;
 //    public static Bitmap bmp = null;
     GLClearRenderer glClearRenderer;
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
