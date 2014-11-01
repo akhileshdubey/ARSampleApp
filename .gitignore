@@ -4,4 +4,4 @@
 .DS_Store
 /build
 *.iml
-/FacebookSDK/build
+/FacebookSDK
