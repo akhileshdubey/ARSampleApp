@@ -69,40 +69,40 @@ public class TextureCube {
         gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
         gl.glPopMatrix();
 
-//        // left
-        gl.glPushMatrix();
-        gl.glRotatef(270.0f, 0.0f, 1.0f, 0.0f);
-        gl.glTranslatef(0.0f, 0.0f, 1.0f);
-        gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
-        gl.glPopMatrix();
-
-        // back
-        gl.glPushMatrix();
-        gl.glRotatef(180.0f, 0.0f, 1.0f, 0.0f);
-        gl.glTranslatef(0.0f, 0.0f, 1.0f);
-        gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
-        gl.glPopMatrix();
-
-        // right
-        gl.glPushMatrix();
-        gl.glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
-        gl.glTranslatef(0.0f, 0.0f, 1.0f);
-        gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
-        gl.glPopMatrix();
-
-        // top
-        gl.glPushMatrix();
-        gl.glRotatef(270.0f, 1.0f, 0.0f, 0.0f);
-        gl.glTranslatef(0.0f, 0.0f, 1.0f);
-        gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
-        gl.glPopMatrix();
-
-        // bottom
-        gl.glPushMatrix();
-        gl.glRotatef(90.0f, 1.0f, 0.0f, 0.0f);
-        gl.glTranslatef(0.0f, 0.0f, 1.0f);
-        gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
-        gl.glPopMatrix();
+////        // left
+//        gl.glPushMatrix();
+//        gl.glRotatef(270.0f, 0.0f, 1.0f, 0.0f);
+//        gl.glTranslatef(0.0f, 0.0f, 1.0f);
+//        gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
+//        gl.glPopMatrix();
+//
+//        // back
+//        gl.glPushMatrix();
+//        gl.glRotatef(180.0f, 0.0f, 1.0f, 0.0f);
+//        gl.glTranslatef(0.0f, 0.0f, 1.0f);
+//        gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
+//        gl.glPopMatrix();
+//
+//        // right
+//        gl.glPushMatrix();
+//        gl.glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
+//        gl.glTranslatef(0.0f, 0.0f, 1.0f);
+//        gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
+//        gl.glPopMatrix();
+//
+//        // top
+//        gl.glPushMatrix();
+//        gl.glRotatef(270.0f, 1.0f, 0.0f, 0.0f);
+//        gl.glTranslatef(0.0f, 0.0f, 1.0f);
+//        gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
+//        gl.glPopMatrix();
+//
+//        // bottom
+//        gl.glPushMatrix();
+//        gl.glRotatef(90.0f, 1.0f, 0.0f, 0.0f);
+//        gl.glTranslatef(0.0f, 0.0f, 1.0f);
+//        gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
+//        gl.glPopMatrix();
 
         gl.glDisableClientState(GL10.GL_TEXTURE_COORD_ARRAY);  // Disable texture-coords-array (NEW)
         gl.glDisableClientState(GL10.GL_VERTEX_ARRAY);

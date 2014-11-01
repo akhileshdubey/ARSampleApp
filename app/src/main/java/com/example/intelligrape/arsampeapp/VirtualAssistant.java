@@ -9,15 +9,17 @@ import android.net.Uri;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager.LayoutParams;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
-public class VirtualAssistant extends Activity {
+public class VirtualAssistant extends Activity implements View.OnTouchListener {
 
     private boolean isFront;
+    private float mPreviousX, mPreviousY;
     /**
      * Called when the activity is first created.
      */
@@ -57,6 +59,7 @@ public class VirtualAssistant extends Activity {
         glClearRenderer = new GLClearRenderer(this);
         glClearRenderer.mResouceId = this.getIntent().getExtras().getInt("resource_id");
         glClearRenderer.mDemoId = this.getIntent().getExtras().getInt("demo_id");
+        glView.setOnTouchListener(this);
 
         glClearRenderer.mY = 0.0f;
         glClearRenderer.mX = -1.0f;
@@ -108,6 +111,17 @@ public class VirtualAssistant extends Activity {
 
             }
         });
+
+
+        ((Button) mToolBox.findViewById(R.id.bt_capture_screen)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+            }
+        });
+
+
 //        ((Button)mToolBox.findViewById(R.id.rLeft)).setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -206,34 +220,37 @@ public class VirtualAssistant extends Activity {
 //    }
 
 
-//    @Override
-//    public boolean onTouchEvent(final MotionEvent evt) {
-//
-//
-//        if(invertPosition)
-//            invertPosition = false;
-//        else
-//            invertPosition = true;
-//
-//        if(isScreenshot)
-//            isScreenshot = false;
-//        else
-//            isScreenshot = true;
-//
-////        float currentX = evt.getX();
-////        float currentY = evt.getY();
-////        float deltaX, deltaY;
-////        switch (evt.getAction()) {
-////            case MotionEvent.ACTION_MOVE:
-////                // Modify rotational angles according to movement
-////                deltaX = currentX - previousX;
-////                deltaY = currentY - previousY;
-////                renderer.angleX += deltaY * TOUCH_SCALE_FACTOR;
-////                renderer.angleY += deltaX * TOUCH_SCALE_FACTOR;
-////        }
-////        // Save current x, y
-////        previousX = currentX;
-////        previousY = currentY;
-//        return true;  // Event handled
-//    }
+    @Override
+    public boolean onTouch(View view, MotionEvent event) {
+
+
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+
+                mPreviousX = event.getX();
+                mPreviousY = event.getY();
+                break;
+
+            case MotionEvent.ACTION_MOVE:
+
+                float x = event.getX();
+                float y = event.getY();
+
+                if (glClearRenderer != null) {
+                    float deltaX = (x - mPreviousX) / 100 / 2f;
+                    float deltaY = (mPreviousY - y) / 100 / 2f;
+
+                    glClearRenderer.mX += deltaX;
+                    glClearRenderer.mY += deltaY;
+                }
+
+                mPreviousX = x;
+                mPreviousY = y;
+        }
+
+
+        return true;
+
+
+    }
 }
