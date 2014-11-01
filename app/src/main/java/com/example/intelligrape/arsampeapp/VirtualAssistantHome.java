@@ -16,7 +16,7 @@ public class VirtualAssistantHome extends ListActivity {
 
     int[] brandsLogo = new int[]{R.drawable.black_glass_256,
             R.drawable.white_glass_256,
-            R.drawable.sun_killer_green_256      ,
+            R.drawable.sun_killer_green_256,
             R.drawable.sun_killer_yellow_256,
             R.drawable.sun_killer_orange_512,
             R.drawable.sun_killer_512,
@@ -28,7 +28,7 @@ public class VirtualAssistantHome extends ListActivity {
     };
     int[] brandsLogoRaw = new int[]{R.raw.black_glass_256,
             R.raw.white_glass_256,
-            R.raw.sun_killer_green_256      ,
+            R.raw.sun_killer_green_256,
             R.raw.sun_killer_yellow_256,
             R.raw.sun_killer_orange_512,
             R.raw.sun_killer_512,
@@ -45,10 +45,7 @@ public class VirtualAssistantHome extends ListActivity {
         setListAdapter(adapter);
 
 
-
-
     }
-
 
 
     @Override
@@ -75,6 +72,7 @@ public class VirtualAssistantHome extends ListActivity {
         private final Context context;
         private final String[] values;
         private final int[] logos;
+
         public MySimpleArrayAdapter(Context context, String[] values, int[] logos) {
             super(context, R.layout.row_layout, values);
             this.context = context;
