@@ -75,7 +75,6 @@ public class VirtualAssistant extends Activity implements View.OnTouchListener {
         // Now also create a view which contains the camera preview...
         cameraView = new CameraView(this);
 
-
         // ...and add it, wrapping the full screen size.
         addContentView(cameraView, new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
 
