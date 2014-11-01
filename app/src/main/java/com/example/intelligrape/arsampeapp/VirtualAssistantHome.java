@@ -3,6 +3,7 @@ package com.example.intelligrape.arsampeapp;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,13 +29,13 @@ public class VirtualAssistantHome extends ListActivity {
             R.drawable.sun_killer_orange_512
     };
     String[] values = new String[]{
-            "Sun Killer 512",
-            "Sun Killer Black 256",
-            "Sun Killer Black 512",
-            "Sun Killer Blue 256",
-            "Sun Killer Blue 512",
-            "Sun Killer Orange 256",
-            "Sun Killer Orange 512"
+            "Grey (L)",
+            "Black (S)",
+            "Black (L)",
+            "Blue (S)",
+            "Blue (L)",
+            "Orange (S)",
+            "Orange (L)"
     };
     int[] brandsLogoRaw = new int[]{
             R.raw.sun_killer_512,
@@ -57,6 +58,7 @@ public class VirtualAssistantHome extends ListActivity {
 //        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 //                android.R.layout.simple_list_item_1, values);
         setListAdapter(assistantBaseAdapter);
+        getListView().setBackgroundColor(Color.WHITE);
 
 
     }
