@@ -87,9 +87,10 @@
         android:layout_alignParentEnd="true" />
 
     <Button
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
         android:id="@+id/btn_show_hide"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_alignParentRight="true"
         android:background="#00000000" />
 </RelativeLayout>
