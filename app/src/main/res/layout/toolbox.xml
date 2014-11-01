@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/toolbox"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@android:color/transparent"
     android:orientation="vertical">
 
@@ -10,51 +10,37 @@
         android:id="@+id/visitUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/relativeLayout3"
+        android:layout_toStartOf="@+id/relativeLayout3"
+        android:background="@drawable/bg"
         android:text="Visit Us" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:text="Share" />
 
 
     <RelativeLayout
+        android:id="@+id/relativeLayout4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true">
 
 
-        <Button
-
-            android:id="@+id/toggle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Toggle Camera" />
-
-        <Button
-
-            android:id="@+id/rLeft"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/toggle"
-            android:background="@drawable/bg"
-            android:text="Rotate Left" />
-
-        <Button
-
-            android:id="@+id/rRight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/rLeft"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/bg"
-            android:text="Rotate Right" />
-
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/relativeLayout3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true">
 
-        <Button
+    <Button
 
             android:id="@+id/left"
             android:layout_width="wrap_content"
@@ -125,4 +111,38 @@
 
     </RelativeLayout>
 
+    <Button
+
+        android:id="@+id/rRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bg"
+        android:text="Rotate Right" />
+
+    <Button
+
+        android:id="@+id/rLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rRight"
+        android:layout_alignEnd="@+id/rRight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/rRight"
+        android:background="@drawable/bg"
+        android:text="Rotate Left" />
+
+    <Button
+
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rLeft"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bg"
+        android:text="Toggle Camera" />
 </RelativeLayout>
