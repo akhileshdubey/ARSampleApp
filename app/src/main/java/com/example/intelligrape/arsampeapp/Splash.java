@@ -3,6 +3,9 @@ package com.example.intelligrape.arsampeapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 public class Splash extends Activity {
 
@@ -56,6 +59,16 @@ public class Splash extends Activity {
             }
         }, 5*1000); // wait for 5 seconds
         */
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        ImageView image1 = (ImageView) findViewById(R.id.logo);
+        Animation animation1 = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.splash_animation);
+        image1.startAnimation(animation1);
+
     }
 
     @Override
