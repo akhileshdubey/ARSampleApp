@@ -14,26 +14,35 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.intelligrape.arsampeapp.adapter.AssistantBaseAdapter;
+
 public class VirtualAssistantHome extends ListActivity {
 
-    int[] brandsLogo = new int[]{R.drawable.black_glass_256,
-            R.drawable.white_glass_256,
-            R.drawable.sun_killer_green_256      ,
-            R.drawable.sun_killer_yellow_256,
-            R.drawable.sun_killer_orange_512,
+    int[] brandsLogo = new int[]{
             R.drawable.sun_killer_512,
+            R.drawable.sun_killer_black_256,
+            R.drawable.sun_killer_black_512,
+            R.drawable.sun_killer_blue_256,
+            R.drawable.sun_killer_blue_512,
+            R.drawable.sun_killer_orange_256,
             R.drawable.sun_killer_orange_512
     };
-    String[] values = new String[]{"black_glass_256", "white_glass_256",
-            "sun_killer_green_256", "sun_killer_yellow_256", "sun_killer_orange_512",
-            "sun_killer_512", "sun_killer_orange_512"
+    String[] values = new String[]{
+            "Sun Killer 512",
+            "Sun Killer Black 256",
+            "Sun Killer Black 512",
+            "Sun Killer Blue 256",
+            "Sun Killer Blue 512",
+            "Sun Killer Orange 256",
+            "Sun Killer Orange 512"
     };
-    int[] brandsLogoRaw = new int[]{R.raw.black_glass_256,
-            R.raw.white_glass_256,
-            R.raw.sun_killer_green_256      ,
-            R.raw.sun_killer_yellow_256,
-            R.raw.sun_killer_orange_512,
+    int[] brandsLogoRaw = new int[]{
             R.raw.sun_killer_512,
+            R.raw.sun_killer_black_256,
+            R.raw.sun_killer_black_512,
+            R.raw.sun_killer_blue_256,
+            R.raw.sun_killer_blue_512,
+            R.raw.sun_killer_orange_256,
             R.raw.sun_killer_orange_512
     };
 
@@ -42,15 +51,15 @@ public class VirtualAssistantHome extends ListActivity {
         super.onCreate(savedInstanceState);
 
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, values);
-        setListAdapter(adapter);
+        AssistantBaseAdapter assistantBaseAdapter = new AssistantBaseAdapter(this, values, brandsLogo);
 
 
+//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+//                android.R.layout.simple_list_item_1, values);
+        setListAdapter(assistantBaseAdapter);
 
 
     }
-
 
 
     @Override
@@ -76,6 +85,7 @@ public class VirtualAssistantHome extends ListActivity {
         private final Context context;
         private final String[] values;
         private final int[] logos;
+
         public MySimpleArrayAdapter(Context context, String[] values, int[] logos) {
             super(context, R.layout.row_layout, values);
             this.context = context;
