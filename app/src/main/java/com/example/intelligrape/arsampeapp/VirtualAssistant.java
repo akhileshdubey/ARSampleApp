@@ -158,7 +158,7 @@ public class VirtualAssistant extends Activity {
             @Override
             public void onClick(View view) {
 
-                String url = "http://www.intelligrape.com";
+                String url = "http://intelligrape.com/mobile-consultants-developers.html";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
