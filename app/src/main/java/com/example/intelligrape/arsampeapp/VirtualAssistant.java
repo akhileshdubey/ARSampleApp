@@ -15,6 +15,7 @@ import android.view.Window;
 import android.view.WindowManager.LayoutParams;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 public class VirtualAssistant extends Activity implements View.OnTouchListener {
 
@@ -96,6 +97,14 @@ public class VirtualAssistant extends Activity implements View.OnTouchListener {
         LayoutInflater loiViewInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         loiViewInflater = LayoutInflater.from(getApplicationContext());
         View mToolBox = loiViewInflater.inflate(R.layout.toolbox, null);
+        mToolBox.findViewById(R.id.share).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(VirtualAssistant.this, "In Progress...", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
         ((Button) mToolBox.findViewById(R.id.zoomIn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -117,7 +126,36 @@ public class VirtualAssistant extends Activity implements View.OnTouchListener {
             @Override
             public void onClick(View view) {
 
+                Toast.makeText(VirtualAssistant.this, "In Progress...", Toast.LENGTH_SHORT).show();
+            }
+        });
 
+        mToolBox.findViewById(R.id.btn_show_hide).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                View viewVisibility = findViewById(R.id.zoomIn);
+
+                switch (viewVisibility.getVisibility()) {
+                    case View.VISIBLE:
+                        findViewById(R.id.zoomIn).setVisibility(View.INVISIBLE);
+                        findViewById(R.id.zoomOut).setVisibility(View.INVISIBLE);
+                        findViewById(R.id.bt_capture_screen).setVisibility(View.INVISIBLE);
+                        findViewById(R.id.share).setVisibility(View.INVISIBLE);
+                        findViewById(R.id.visitUs).setVisibility(View.INVISIBLE);
+                        findViewById(R.id.toggle).setVisibility(View.INVISIBLE);
+                        findViewById(R.id.zoomIn).setVisibility(View.INVISIBLE);
+                        break;
+                    case View.INVISIBLE:
+                        findViewById(R.id.zoomIn).setVisibility(View.VISIBLE);
+                        findViewById(R.id.zoomOut).setVisibility(View.VISIBLE);
+                        findViewById(R.id.bt_capture_screen).setVisibility(View.VISIBLE);
+                        findViewById(R.id.share).setVisibility(View.VISIBLE);
+                        findViewById(R.id.visitUs).setVisibility(View.VISIBLE);
+                        findViewById(R.id.toggle).setVisibility(View.VISIBLE);
+                        findViewById(R.id.zoomIn).setVisibility(View.VISIBLE);
+                        break;
+                }
             }
         });
 
