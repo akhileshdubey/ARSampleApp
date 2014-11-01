@@ -2,10 +2,10 @@
 <merger version="2" >
 
     <dataSet config="debug" >
-        <source path="/media/akhilesh/Data/Projects/workspace-ar_sample_app/ARSampleApp/FacebookSDK/build/intermediates/bundles/debug/assets" />
+        <source path="/home/rajendra/Androidproject/Intellimeet/ARSampleApp/FacebookSDK/build/intermediates/bundles/debug/assets" />
     </dataSet>
     <dataSet config="main" >
-        <source path="/media/akhilesh/Data/Projects/workspace-ar_sample_app/ARSampleApp/FacebookSDK/src/androidTest/assets" />
+        <source path="/home/rajendra/Androidproject/Intellimeet/ARSampleApp/FacebookSDK/src/androidTest/assets" />
     </dataSet>
 
 </merger>
