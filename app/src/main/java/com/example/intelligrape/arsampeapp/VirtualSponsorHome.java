@@ -3,6 +3,7 @@ package com.example.intelligrape.arsampeapp;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,10 +15,28 @@ import android.widget.TextView;
 
 public class VirtualSponsorHome extends ListActivity {
 
-    int[] brandsLogo = new int[]{R.drawable.intelligrape, R.drawable.coca_cola, R.drawable.google, R.drawable.play_store, R.drawable.logo_tv};
-    String[] values = new String[]{"Intelligrape Softwares", "Cocacola Inc", "Google Inc", "Play Store", "Logo TV",
+    int[] brandsLogo = new int[]{
+            R.drawable.intelligrape,
+            R.drawable.coca_cola,
+            R.drawable.google,
+            R.drawable.play_store,
+            R.drawable.logo_tv
     };
-    String[] urls = new String[]{"http://www.intelligrape.com", "http://www.coca-colaindia.com", "https://www.google.co.in", "https://play.google.com/store", "http://www.logotv.com",
+
+    String[] values = new String[]{
+            "Intelligrape Softwares",
+            "Cocacola Inc",
+            "Google Inc",
+            "Play Store",
+            "Logo TV"
+    };
+
+    String[] urls = new String[]{
+            "http://www.intelligrape.com",
+            "http://www.coca-colaindia.com",
+            "https://www.google.co.in",
+            "https://play.google.com/store",
+            "http://www.logotv.com"
     };
 
     @Override
@@ -27,7 +46,7 @@ public class VirtualSponsorHome extends ListActivity {
 
         MySimpleArrayAdapter adapter = new MySimpleArrayAdapter(this, values, brandsLogo);
         setListAdapter(adapter);
-
+        getListView().setBackgroundColor(Color.WHITE);
     }
 
 
@@ -64,9 +83,9 @@ public class VirtualSponsorHome extends ListActivity {
         public View getView(int position, View convertView, ViewGroup parent) {
             LayoutInflater inflater = (LayoutInflater) context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View rowView = inflater.inflate(R.layout.row_layout, parent, false);
-            TextView textView = (TextView) rowView.findViewById(R.id.label);
-            ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
+            View rowView = inflater.inflate(R.layout.layout_virtual_assistant, parent, false);
+            TextView textView = (TextView) rowView.findViewById(R.id.tv_glass_name);
+            ImageView imageView = (ImageView) rowView.findViewById(R.id.iv_glass);
             textView.setText(values[position]);
             // Change the icon for Windows and iPhone
             imageView.setImageResource(brandsLogo[position]);
