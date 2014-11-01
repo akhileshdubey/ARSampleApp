@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+<<<<<<< HEAD
     <!-- From: file:/home/rajendra/Androidproject/Intellimeet/ARSampleApp/FacebookSDK/res/values-he/strings.xml -->
+=======
+    <!-- From: file:/home/intelligrape/AndroidStudioProjects/ARSampleApp/FacebookSDK/res/values-he/strings.xml -->
+>>>>>>> 3c7587ff1895260a0691dd60eb98d082b926f6ea
     <eat-comment />
 
     <string name="com_facebook_choose_friends">בחר חברים</string>

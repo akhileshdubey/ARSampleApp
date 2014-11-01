@@ -18,4 +18,8 @@
     <item android:drawable="@drawable/com_facebook_button_grey_focused" android:state_focused="true" />
     <item android:drawable="@drawable/com_facebook_button_grey_normal" />
 </selector>
+<<<<<<< HEAD
 <!-- From: file:/home/rajendra/Androidproject/Intellimeet/ARSampleApp/FacebookSDK/res/drawable/com_facebook_loginbutton_silver.xml -->
+=======
+<!-- From: file:/home/intelligrape/AndroidStudioProjects/ARSampleApp/FacebookSDK/res/drawable/com_facebook_loginbutton_silver.xml -->
+>>>>>>> 3c7587ff1895260a0691dd60eb98d082b926f6ea

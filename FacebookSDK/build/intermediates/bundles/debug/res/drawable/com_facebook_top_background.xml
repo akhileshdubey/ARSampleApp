@@ -19,4 +19,8 @@
         android:endColor="#FF47639e"
         android:startColor="#FF5975b0" />
 </shape>
+<<<<<<< HEAD
 <!-- From: file:/home/rajendra/Androidproject/Intellimeet/ARSampleApp/FacebookSDK/res/drawable/com_facebook_top_background.xml -->
+=======
+<!-- From: file:/home/intelligrape/AndroidStudioProjects/ARSampleApp/FacebookSDK/res/drawable/com_facebook_top_background.xml -->
+>>>>>>> 3c7587ff1895260a0691dd60eb98d082b926f6ea
