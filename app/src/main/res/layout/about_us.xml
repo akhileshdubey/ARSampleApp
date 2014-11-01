@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tv_developed_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Developed By"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/separator1"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_developed_by"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#face99" />
+
+    <TextView
+        android:id="@+id/tv_memberDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separator1"
+        android:layout_centerHorizontal="true"
+        android:text="Amdroid Team" />
+
+    <TextView
+        android:id="@+id/tv_conceptualized_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_memberDB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Conceptualized By"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_conceptualized_by"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#face99" />
+
+    <TextView
+        android:id="@+id/tv_memberCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separator2"
+        android:layout_centerHorizontal="true"
+        android:text="Jitendra Kumar" />
+
+    <TextView
+        android:id="@+id/tv_ar_development_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_memberCB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="AR Development"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/separator3"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_ar_development_by"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#face99" />
+
+    <RelativeLayout
+        android:id="@+id/rl_team_ARD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separator3"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_teamARD_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team A"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/separator4.1"
+            android:layout_width="58dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_teamARD_A"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#face99" />
+
+        <TextView
+            android:id="@+id/tv_teamARD_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_toRightOf="@id/tv_teamARD_A"
+            android:text="Team B"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/separator4.2"
+            android:layout_width="58dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_teamARD_B"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_teamARD_A"
+            android:background="#face99" />
+
+        <TextView
+            android:id="@+id/tv_teamARD_A1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator4.1"
+            android:text="Nav Krishna" />
+
+        <TextView
+            android:id="@+id/tv_teamARD_B1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator4.2"
+            android:layout_marginLeft="110dp"
+            android:layout_toRightOf="@id/tv_teamARD_A"
+            android:text="Rajendra Singh" />
+
+        <TextView
+            android:id="@+id/tv_teamARD_A2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_teamARD_A1"
+            android:text="Anand Kumar Rai" />
+
+        <TextView
+            android:id="@+id/tv_teamARD_B2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_teamARD_B1"
+            android:layout_marginLeft="110dp"
+            android:layout_toRightOf="@id/tv_teamARD_A"
+            android:text="Himanshu Singh" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_ui_development_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_team_ARD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="UI Development"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/separator5"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_ui_development_by"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#face99" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separator5"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_teamARD_A11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team A"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/separator4.1.1"
+            android:layout_width="58dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_teamARD_A11"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#face99" />
+
+        <TextView
+            android:id="@+id/tv_teamARD_B11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_toRightOf="@id/tv_teamARD_A11"
+            android:text="Team B"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/separator4.2.1"
+            android:layout_width="58dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_teamARD_B11"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_teamARD_A11"
+            android:background="#face99" />
+
+        <TextView
+            android:id="@+id/tv_teamARD_A1.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator4.1.1"
+            android:text="Akhilesh Dhar Dubey" />
+
+        <TextView
+            android:id="@+id/tv_teamARD_B1.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator4.2.1"
+            android:layout_marginLeft="110dp"
+            android:layout_toRightOf="@id/tv_teamARD_A11"
+            android:text="Vaibhav Chahal" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="@string/branding"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+</RelativeLayout>

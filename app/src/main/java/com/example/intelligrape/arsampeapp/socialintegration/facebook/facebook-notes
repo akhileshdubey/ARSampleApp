@@ -1,0 +1,76 @@
+com.intelligrape.socialintegration.facebook.SIFacebook
+
+
+SIFacebook Class to use Facebook Integration in Android. 
+
+Steps to login and share: 
+
+	- Add latest Facebook SDK to your project 
+	- Create instance of this class at class-level SIFacebook facebook = new SIFacebook(this); 
+	- Instantiate listener 
+	
+	SIFacebook.SIFacebookListener listener = facebook.new SIFacebookListener() {
+
+		@Override
+	 		public void onLogIn(GraphUser graphUser) { }
+		@Override
+	 		public void onConnectionFailure(String errorMessage) { }; 
+		@Override
+	 		public void onLogOut() { }; 
+	}
+	
+	- Please register SIFacebookListener before calling login().
+
+	- Please define com.facebook.LoginActivity in AndroidManifest.xml as 
+		<activity android:name=\"com.facebook.LoginActivity\" />.
+	
+	- Please provide Application ID in AndroidManifest.xml 
+		<meta-data android:name=\"com.facebook.sdk.ApplicationId\" 
+		android:value=\"@string/app_id\" />
+		inside <application>.
+
+	- Please override the onActivityResult() in your Activity and call facebook.onActivityResult()
+	  in onActivityResult().
+		
+	- Now, call facebook.login(true) to begin login process, or call facebook.login(true, 
+	 Arrays.asList(Permissions_V2.USER_ABOUT_ME, Permissions_V2.USER_BIRTHDAY) to login with extra 
+	 permissions. 
+	 
+	- To logout call facebook.logout() 
+
+Methods to share 
+	- facebook.shareMessage() 
+	- facebook.shareLink() 
+	- facebook.sharePhoto()
+	- facebook.shareVideo()
+	
+	
+
+1. When logIn() method will be called from the user then 
+   only onLogIn() callback method will be called.
+
+2. When logOut() method will be called from the user then 
+   only onLogOut() callback method will be called.
+
+3. onConnectionFailure() callback method will be called when any connection failure occur.
+
+4. When getProfilePictureBitmap() method will be called from the user then 
+   only onGetProfilePictureBitmap() callback method will be called.
+
+5. When getExtras() method will be called from the user then 
+   only onGetExtras() callback method will be called.
+
+6. When sharePhoto() method will be called from the user then 
+   only onSharePhoto() callback method will be called.
+
+7. When shareVideo() method will be called from the user then 
+   only onShareVideo() callback method will be called.
+
+8. When shareLink() method will be called from the user then 
+   only onShareLink() callback method will be called.
+
+9. When shareMessage() method will be called from the user then 
+   only onShareMessage() callback method will be called.
+
+10. jsonObject() callback method will be called when logIn() will be called.
+

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbox"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/visitUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Visit Us" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true">
+
+
+        <Button
+
+            android:id="@+id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toggle Camera" />
+
+        <Button
+
+            android:id="@+id/rLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toggle"
+            android:background="@drawable/bg"
+            android:text="Rotate Left" />
+
+        <Button
+
+            android:id="@+id/rRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rLeft"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg"
+            android:text="Rotate Right" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <Button
+
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:text="Left"
+
+            />
+
+        <Button
+
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/left"
+            android:background="@drawable/bg"
+            android:text="Right"
+
+            />
+
+
+        <Button
+
+            android:id="@+id/up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/left"
+            android:background="@drawable/bg"
+            android:text="UP"
+
+            />
+
+        <Button
+
+            android:id="@+id/down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/up"
+            android:layout_toRightOf="@id/left"
+            android:background="@drawable/bg"
+            android:text="Down"
+
+            />
+
+        <Button
+
+            android:id="@+id/zoomIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/up"
+            android:background="@drawable/bg"
+            android:text="ZoomIn"
+
+
+            />
+
+        <Button
+
+            android:id="@+id/zoomOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zoomIn"
+            android:layout_toRightOf="@id/up"
+            android:background="@drawable/bg"
+            android:text="ZoomOut"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
