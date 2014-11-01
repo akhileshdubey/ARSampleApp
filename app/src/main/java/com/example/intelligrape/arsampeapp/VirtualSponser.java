@@ -81,35 +81,7 @@ public class VirtualSponser extends Activity {
         LayoutInflater loiViewInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         loiViewInflater = LayoutInflater.from(getApplicationContext());
         View mToolBox = loiViewInflater.inflate(R.layout.toolbox, null);
-        ((Button) mToolBox.findViewById(R.id.left)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                glClearRenderer.mX--;
-            }
-        });
-        ((Button) mToolBox.findViewById(R.id.right)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                glClearRenderer.mX++;
-
-            }
-        });
-        ((Button) mToolBox.findViewById(R.id.up)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                glClearRenderer.mY++;
-
-            }
-        });
-        ((Button) mToolBox.findViewById(R.id.down)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                glClearRenderer.mY--;
-
-            }
-        });
         ((Button) mToolBox.findViewById(R.id.zoomIn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -122,22 +94,6 @@ public class VirtualSponser extends Activity {
             @Override
             public void onClick(View view) {
                 glClearRenderer.mZ--;
-
-            }
-        });
-        ((Button) mToolBox.findViewById(R.id.rLeft)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                glClearRenderer.mRotate++;
-
-            }
-        });
-        ((Button) mToolBox.findViewById(R.id.rRight)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                glClearRenderer.mRotate--;
 
             }
         });

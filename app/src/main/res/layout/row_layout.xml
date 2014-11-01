@@ -6,8 +6,8 @@
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="200dp"
-        android:layout_height="80dp"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/list_size"
         android:layout_marginLeft="4dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="4dp"
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:layout_gravity="center"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="20dp"
         android:text="@+id/label"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="10sp"
