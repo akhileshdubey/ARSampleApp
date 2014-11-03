@@ -12,7 +12,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager.LayoutParams;
-import android.widget.Button;
 import android.widget.RelativeLayout;
 
 public class VirtualSponser extends Activity {
@@ -82,7 +81,7 @@ public class VirtualSponser extends Activity {
         loiViewInflater = LayoutInflater.from(getApplicationContext());
         View mToolBox = loiViewInflater.inflate(R.layout.toolbox, null);
 
-        ((Button) mToolBox.findViewById(R.id.zoomIn)).setOnClickListener(new View.OnClickListener() {
+        mToolBox.findViewById(R.id.zoomIn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -90,7 +89,7 @@ public class VirtualSponser extends Activity {
 
             }
         });
-        ((Button) mToolBox.findViewById(R.id.zoomOut)).setOnClickListener(new View.OnClickListener() {
+        mToolBox.findViewById(R.id.zoomOut).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 glClearRenderer.mZ--;
@@ -98,7 +97,7 @@ public class VirtualSponser extends Activity {
             }
         });
 
-        ((Button) mToolBox.findViewById(R.id.visitUs)).setOnClickListener(new View.OnClickListener() {
+        mToolBox.findViewById(R.id.visitUs).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 

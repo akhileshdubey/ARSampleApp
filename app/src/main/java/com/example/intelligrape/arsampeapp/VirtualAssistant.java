@@ -13,7 +13,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager.LayoutParams;
-import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -104,7 +103,7 @@ public class VirtualAssistant extends Activity implements View.OnTouchListener {
             }
         });
 
-        ((Button) mToolBox.findViewById(R.id.zoomIn)).setOnClickListener(new View.OnClickListener() {
+        mToolBox.findViewById(R.id.zoomIn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -112,7 +111,7 @@ public class VirtualAssistant extends Activity implements View.OnTouchListener {
 
             }
         });
-        ((Button) mToolBox.findViewById(R.id.zoomOut)).setOnClickListener(new View.OnClickListener() {
+        mToolBox.findViewById(R.id.zoomOut).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 glClearRenderer.mZ--;
@@ -121,7 +120,7 @@ public class VirtualAssistant extends Activity implements View.OnTouchListener {
         });
 
 
-        ((Button) mToolBox.findViewById(R.id.bt_capture_screen)).setOnClickListener(new View.OnClickListener() {
+        mToolBox.findViewById(R.id.bt_capture_screen).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -176,7 +175,7 @@ public class VirtualAssistant extends Activity implements View.OnTouchListener {
 //            }
 //        });
 
-        ((Button) mToolBox.findViewById(R.id.visitUs)).setOnClickListener(new View.OnClickListener() {
+        mToolBox.findViewById(R.id.visitUs).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -188,7 +187,7 @@ public class VirtualAssistant extends Activity implements View.OnTouchListener {
             }
         });
 
-        ((Button) mToolBox.findViewById(R.id.toggle)).setOnClickListener(new View.OnClickListener() {
+        mToolBox.findViewById(R.id.toggle).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
